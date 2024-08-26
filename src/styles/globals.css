@@ -1,3 +1,161 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* base */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+img,
+video,
+svg {
+  height: auto;
+  max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition: none;
+  }
+}
+
+/* project headline */
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 24px;
+  line-height: 36.9px;
+  font-weight: 700;
+}
+h4 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+h5 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+h6 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+@layer base {
+  .p1 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .p2 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .p3 {
+    font-size: 16px;
+    line-height: 24.6px;
+    font-weight: 500;
+  }
+  .p4 {
+    font-size: 14px;
+    line-height: 20.5px;
+    font-weight: 500;
+  }
+  .p5 {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+  .p6 {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .p7 {
+    font-size: 8px;
+    font-weight: 500;
+  }
+
+  .cta1 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .cta2 {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .cta3 {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .cta4 {
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .cta5 {
+    font-size: 8px;
+    font-weight: 700;
+  }
+
+  .a1 {
+    font-size: 16px;
+    line-height: 16.4px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  .a2 {
+    font-size: 12.32px;
+    line-height: 16.4px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  .a3 {
+    font-size: 10px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+}
